@@ -456,9 +456,9 @@ a{
     }
     .skills-tab{
         align-self: center; 
-        width: 40vw;
-        height: 36vw;
-        padding: 25px 0px 20px 0px;
+        width: 38vw;
+        height: 35vw;
+        padding: 27px 0px 20px 0px;
     } 
     .skill-icon .fab{
         font-size: 3rem;
