@@ -9,7 +9,7 @@ html{
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
 }
-body{
+#Container{
     width: 100%;
     background: #D3CCE3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
@@ -36,7 +36,6 @@ h4{
     font-family: 'Merriweather', serif;
 }
 p{
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Roboto Slab', serif;
 }
 .nav{
@@ -348,7 +347,7 @@ a{
 }
 
 @media(max-width: 768px){
-    body{
+    #Container{
         width: 100%;
     }
     .navbar-list {
@@ -384,6 +383,8 @@ a{
         grid-template-rows: 0.5fr 0.7fr 2fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
     .about h1{
@@ -406,6 +407,7 @@ a{
         width: auto;
         box-sizing: border-box;
         text-align: justify;
+        font-size: 1.3rem;
     }
     .education{
         margin-left: 0;
@@ -454,8 +456,8 @@ a{
     }
     .skills-tab{
         align-self: center; 
-        width: 42vw;
-        height: 37vw;
+        width: 40vw;
+        height: 36vw;
         padding: 25px 0px 20px 0px;
     } 
     .skill-icon .fab{
@@ -471,15 +473,14 @@ a{
         font-size: 1.8rem;
     }
     .proj-img{
-        min-width: 70vw;
-        height: 40vh;
+        min-width: 65vw;
+        height: 32vh;
         margin-left: 0px;
     }
     .contact{
-        padding-left: 0;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         margin-right: 900px;
-        padding-top: 50px;
+        padding: 300px 0px 0px 0px;
     }
     .contact-title{
         margin-bottom: 0;
